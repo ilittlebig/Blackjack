@@ -1,7 +1,7 @@
 #include <iostream>
 #include <gtest/gtest.h>
-#include "Hand/HandValueCalculator.h"
-#include "Card/Card.h"
+#include "../../Hand/HandValueCalculator.h"
+#include "../../Card/Card.h"
 
 void DoesHandHaveAceTest(std::vector<Card>& cards, bool expectedValue) {
 	HandValueCalculator handValueCalculator;
@@ -25,8 +25,6 @@ TEST(DoesHandHaveAceTest, AddCard1) {
 	AddCard("H", "5", cards);
 	AddCard("C", "10", cards);
 	AddCard("C", "7", cards);
-
-	
 
 	DoesHandHaveAceTest(cards, false);
 	cards.clear();

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <gtest/gtest.h>
-#include "Card/Card.h"
+#include "../../Card/Card.h"
 
 void TestCard(std::string suit, std::string rank, int expectedValue, std::vector<Card>& cards) {
 	Card card(suit, rank);
