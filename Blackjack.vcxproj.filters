@@ -15,18 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Action\Double\DoubleAction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Action\Hit\HitAction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Action\Split\SplitAction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Action\Stand\StandAction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Action\Action.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,9 +22,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Card\Deck.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CasinoDealer\CasinoDealer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Gambler\Gambler.cpp">
@@ -57,18 +42,15 @@
     <ClCompile Include="Test Files\Hand Tests\HandCalculatorTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Test Files\Action Tests\HitActionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CasinoDealer\CasinoDealer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Action\Double\DoubleAction.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Action\Hit\HitAction.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Action\Split\SplitAction.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Action\Stand\StandAction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Action\Action.h">
@@ -80,9 +62,6 @@
     <ClInclude Include="Card\Deck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CasinoDealer\CasinoDealer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Gambler\Gambler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -92,7 +71,10 @@
     <ClInclude Include="Hand\HandValueCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Player\Player.h">
+    <ClInclude Include="CasinoDealer\CasinoDealer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Action\Double\DoubleAction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

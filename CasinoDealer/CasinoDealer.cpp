@@ -1,8 +1,6 @@
 #include <iostream>
 #include "CasinoDealer.h"
 #include "../Hand/HandValueCalculator.h"
-#include "../Action/Stand/StandAction.h"
-#include "../Action/Hit/HitAction.h"
 
 /*
 int GetInput() {

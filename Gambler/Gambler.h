@@ -1,13 +1,17 @@
 #ifndef GAMBLER_H_INCLUDED
 #define GAMBLER_H_INCLUDED
 
-#include "../Player/Player.h"
 #include "../Action/Action.h"
 
-class Gambler : public Player {
+class Gambler {
 public:
-	std::unique_ptr<Action> DecideNextMove();
-	std::unique_ptr<Action> GetAction(int input);
+	std::unique_ptr<Action<Gambler>> DecideNextMove();
+	std::unique_ptr<Action<Gambler>> GetAction(int input);
+	
+	void setBet(const int& amount);
+	int getBet() const;
+private:
+	int bet = 0;
 };
 
 #endif // !GAMBLER_H_INCLUDED

@@ -1,9 +1,6 @@
 #include <iostream>
 #include "Gambler.h"
-#include "../Action/Stand/StandAction.h"
 #include "../Action/Hit/HitAction.h"
-#include "../Action/Split/SplitAction.h"
-#include "../Action/Double/DoubleAction.h"
 
 int GetInput() {
 	int input;
@@ -11,8 +8,8 @@ int GetInput() {
 	return input;
 }
 
-std::unique_ptr<Action> Gambler::GetAction(int input) {
-	std::unique_ptr<Action> action;
+std::unique_ptr<Action<Gambler>> Gambler::GetAction(int input) {
+	std::unique_ptr<Action<Gambler>> action;
 	/*
 	switch (input) {
 	case 1:
@@ -34,8 +31,16 @@ std::unique_ptr<Action> Gambler::GetAction(int input) {
 	return action;
 }
 
-std::unique_ptr<Action> Gambler::DecideNextMove() {
+std::unique_ptr<Action<Gambler>> Gambler::DecideNextMove() {
 	int input = GetInput();
-	std::unique_ptr<Action> action = GetAction(input);
+	std::unique_ptr<Action<Gambler>> action = GetAction(input);
 	return action;
+}
+
+void Gambler::setBet(const int& amount) {
+	this->bet = amount;
+}
+
+int Gambler::getBet() const {
+	return this->bet;
 }

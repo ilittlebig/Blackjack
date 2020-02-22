@@ -8,7 +8,7 @@ void TestCard(std::string suit, std::string rank, int expectedValue, std::vector
 	EXPECT_EQ(card.GetValue(), expectedValue);
 }
 
-TEST(TestName, TestCards1) {
+TEST(ExamineCardValue, TestCards1) {
 	std::vector<Card> cards;
 
 	TestCard("D", "7", 7, cards);
@@ -16,7 +16,7 @@ TEST(TestName, TestCards1) {
 	TestCard("S", "2", 2, cards);
 }
 
-TEST(TestName, TestCards2) {
+TEST(ExamineCardValue, TestCards2) {
 	std::vector<Card> cards;
 
 	TestCard("H", "5", 5, cards);
@@ -24,7 +24,7 @@ TEST(TestName, TestCards2) {
 	TestCard("C", "A", 11, cards);
 }
 
-TEST(TestName, TestCards3) {
+TEST(ExamineCardValue, TestCards3) {
 	std::vector<Card> cards;
 
 	TestCard("S", "Q", 10, cards);
@@ -32,7 +32,7 @@ TEST(TestName, TestCards3) {
 	TestCard("D", "A", 11, cards);
 }
 
-TEST(TestName, TestCards4) {
+TEST(ExamineCardValue, TestCards4) {
 	std::vector<Card> cards;
 
 	TestCard("H", "3", 3, cards);

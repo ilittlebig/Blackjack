@@ -148,16 +148,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Action\Action.cpp" />
-    <ClCompile Include="Action\Double\DoubleAction.cpp" />
-    <ClCompile Include="Action\Hit\HitAction.cpp" />
-    <ClCompile Include="Action\Split\SplitAction.cpp" />
-    <ClCompile Include="Action\Stand\StandAction.cpp" />
     <ClCompile Include="Card\Card.cpp" />
     <ClCompile Include="Card\Deck.cpp" />
     <ClCompile Include="CasinoDealer\CasinoDealer.cpp" />
     <ClCompile Include="Gambler\Gambler.cpp" />
     <ClCompile Include="Hand\Hand.cpp" />
     <ClCompile Include="Hand\HandValueCalculator.cpp" />
+    <ClCompile Include="Test Files\Action Tests\HitActionTest.cpp" />
     <ClCompile Include="Test Files\Card Tests\CardTest.cpp" />
     <ClCompile Include="Test Files\Hand Tests\HandCalculatorTest.cpp" />
     <ClCompile Include="Test Files\Tests.cpp" />
@@ -166,15 +163,12 @@
     <ClInclude Include="Action\Action.h" />
     <ClInclude Include="Action\Double\DoubleAction.h" />
     <ClInclude Include="Action\Hit\HitAction.h" />
-    <ClInclude Include="Action\Split\SplitAction.h" />
-    <ClInclude Include="Action\Stand\StandAction.h" />
     <ClInclude Include="Card\Card.h" />
     <ClInclude Include="Card\Deck.h" />
     <ClInclude Include="CasinoDealer\CasinoDealer.h" />
     <ClInclude Include="Gambler\Gambler.h" />
     <ClInclude Include="Hand\Hand.h" />
     <ClInclude Include="Hand\HandValueCalculator.h" />
-    <ClInclude Include="Player\Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
