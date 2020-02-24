@@ -1,13 +1,18 @@
 #ifndef CASINODEALER_H_INCLUDED
 #define CASINODEALER_H_INCLUDED
 
-#include "../Player/Player.h"
 #include "../Action/Action.h"
+#include "../Action/Hit/HitAction.h"
+#include "../Action/Stand/StandAction.h"
 
-class CasinoDealer : public Player {
+class CasinoDealer {
 public:
-	std::unique_ptr<Action> DecideNextMove();
-	std::unique_ptr<Action> GetAction(int input);
+	void DecideNextMove();
+private:
+	void Execute(Action<CasinoDealer>* action);
+	int GetInput();
+
+	Hand hand;
 };
 
 #endif // !CASINODEALER_H_INCLUDED

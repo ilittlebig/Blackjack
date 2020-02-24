@@ -1,41 +1,34 @@
-#include <iostream>
 #include "Gambler.h"
-#include "../Action/Stand/StandAction.h"
-#include "../Action/Hit/HitAction.h"
-#include "../Action/Split/SplitAction.h"
-#include "../Action/Double/DoubleAction.h"
 
-int GetInput() {
-	int input;
-	std::cin >> input;
-	return input;
+void Gambler::Execute(Action<Gambler>* action) {
+	action->Execute();
+	delete action;
 }
 
-std::unique_ptr<Action> Gambler::GetAction(int input) {
-	std::unique_ptr<Action> action;
-	/*
+void Gambler::DecideNextMove(int input) {
 	switch (input) {
 	case 1:
-		action = std::make_unique<StandAction>(this, Hand());
+		Execute(new HitAction<Gambler>(this, this->hand, Deck()));
 		break;
 	case 2:
-		action = std::make_unique<StandAction>(this, Hand());
+		Execute(new StandAction<Gambler>(this, this->hand, Deck()));
 		break;
 	case 3:
-		action = std::make_unique<SplitAction>(this, Hand());
+		Execute(new SplitAction<Gambler>(this, this->hand, Deck()));
 		break;
 	case 4:
-		action = std::make_unique<DoubleAction>(this, Hand());
+		Execute(new DoubleAction<Gambler>(this, this->hand, Deck()));
 		break;
 	default:
+		Execute(new StandAction<Gambler>(this, this->hand, Deck()));
 		break;
 	}
-	*/
-	return action;
 }
 
-std::unique_ptr<Action> Gambler::DecideNextMove() {
-	int input = GetInput();
-	std::unique_ptr<Action> action = GetAction(input);
-	return action;
+void Gambler::SetBet(const int& amount) {
+	this->bet = amount;
+}
+
+int Gambler::GetBet() const {
+	return this->bet;
 }
