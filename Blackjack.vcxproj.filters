@@ -42,19 +42,13 @@
     <ClCompile Include="Card\Deck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Action\Stand\StandAction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Action\Action.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Action\Split\SplitAction.cpp">
+    <ClCompile Include="Test Files\Hand Tests\HandClassTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Action\Hit\HitAction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Action\Double\DoubleAction.cpp">
+    <ClCompile Include="Test Files\Action Tests\DoubleActionTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

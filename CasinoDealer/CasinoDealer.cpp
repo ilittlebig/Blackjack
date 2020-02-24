@@ -7,7 +7,9 @@ void CasinoDealer::Execute(Action<CasinoDealer>* action) {
 }
 
 int CasinoDealer::GetInput() {
-	int totalValue = GetTotalHand();
+	HandValueCalculator handValueCalculator;
+	int totalValue = handValueCalculator.CalculateHand(this->hand.GetCards());
+
 	if (totalValue < 17) {
 		return 2;
 	} else if (totalValue >= 17) {
@@ -23,9 +25,8 @@ void CasinoDealer::DecideNextMove() {
 		Execute(new HitAction<CasinoDealer>(this, this->hand, Deck()));
 		break;
 	case 2:
-		Execute(new StandAction<CasinoDealer>(this, this->hand, Deck()));
-		break;
 	default:
+		Execute(new StandAction<CasinoDealer>(this, this->hand, Deck()));
 		break;
 	}
 }

@@ -156,18 +156,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Action\Action.cpp" />
-    <ClCompile Include="Action\Double\DoubleAction.cpp" />
-    <ClCompile Include="Action\Hit\HitAction.cpp" />
-    <ClCompile Include="Action\Split\SplitAction.cpp" />
-    <ClCompile Include="Action\Stand\StandAction.cpp" />
     <ClCompile Include="Card\Card.cpp" />
     <ClCompile Include="Card\Deck.cpp" />
     <ClCompile Include="CasinoDealer\CasinoDealer.cpp" />
     <ClCompile Include="Gambler\Gambler.cpp" />
     <ClCompile Include="Hand\Hand.cpp" />
     <ClCompile Include="Hand\HandValueCalculator.cpp" />
+    <ClCompile Include="Test Files\Action Tests\DoubleActionTest.cpp" />
     <ClCompile Include="Test Files\Card Tests\CardTest.cpp" />
     <ClCompile Include="Test Files\Hand Tests\HandCalculatorTest.cpp" />
+    <ClCompile Include="Test Files\Hand Tests\HandClassTest.cpp" />
     <ClCompile Include="Test Files\Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
