@@ -51,6 +51,9 @@
     <ClCompile Include="Test Files\Action Tests\DoubleActionTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Test Files\Card Tests\DeckTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player\Player.h">

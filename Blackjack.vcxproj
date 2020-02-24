@@ -164,6 +164,7 @@
     <ClCompile Include="Hand\HandValueCalculator.cpp" />
     <ClCompile Include="Test Files\Action Tests\DoubleActionTest.cpp" />
     <ClCompile Include="Test Files\Card Tests\CardTest.cpp" />
+    <ClCompile Include="Test Files\Card Tests\DeckTest.cpp" />
     <ClCompile Include="Test Files\Hand Tests\HandCalculatorTest.cpp" />
     <ClCompile Include="Test Files\Hand Tests\HandClassTest.cpp" />
     <ClCompile Include="Test Files\Tests.cpp" />
