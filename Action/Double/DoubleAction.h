@@ -22,7 +22,7 @@ template<typename T>
 void DoubleAction<T>::Execute() {
 	Card newCard = this->deck.GetTopCard();
 	this->hand.AddCard(newCard);
-	this->performer->setBet(this->performer->getBet()*2);
+	this->performer->SetBet(this->performer->GetBet()*2);
 }
 
 #endif // !DOUBLEACTION_H_INCLUDED
