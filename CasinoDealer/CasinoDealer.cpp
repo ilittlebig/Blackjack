@@ -22,9 +22,11 @@ void CasinoDealer::DecideNextMove() {
 	int input = GetInput();
 	switch (input) {
 	case 1:
-		Execute(new HitAction<CasinoDealer>(this, this->hand, Deck()));
+		Execute(new StandAction<CasinoDealer>(this, this->hand, Deck()));
 		break;
 	case 2:
+		Execute(new HitAction<CasinoDealer>(this, this->hand, Deck()));
+		break;
 	default:
 		Execute(new StandAction<CasinoDealer>(this, this->hand, Deck()));
 		break;
