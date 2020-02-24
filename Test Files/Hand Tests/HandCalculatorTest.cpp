@@ -26,8 +26,6 @@ TEST(DoesHandHaveAceTest, AddCard1) {
 	AddCard("C", "10", cards);
 	AddCard("C", "7", cards);
 
-	
-
 	DoesHandHaveAceTest(cards, false);
 	cards.clear();
 }
